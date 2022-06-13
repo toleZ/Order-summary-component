@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card {
+  width: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.card__title {
+  margin: 2rem 0 1rem 0;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #1f2f56;
+  font-weight: 900;
+}
+
+.card__paragraph {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  width: 80%;
+  color: #7280a7;
+  font-weight: 500;
+}
+
+.card__plan {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #F8F9FE;
+  padding: 1.1rem;
+}
+
+.card__plan--img {
+  margin-right: 12px;
+}
+
+.card__plan--info {
+  display: flex;
+  flex-direction: row;
+}
+
+.card__plan--title {
+  font-weight: 700;
+  color: #1f2f56;
+}
+
+.card__plan--price {
+  color: #7280a7;
+}
+
+.card__plan--link {
+  color: #483CBC;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.card__plan--link:hover {
+  opacity: .8;
+}
+
+.card__btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 1.5rem 0;
+}
+
+.card__btns input[type='submit'] {
+  width: 100%;
+  padding: .8rem;
+  border: none;
+  font-family: "Outfit", sans-serif;
+  border-radius: 10px;
+  margin-bottom: .5rem;
+}
+
+.card__btns--payment {
+  background-color: #382AE1;
+  font-weight: 600;
+  color: white;
+}
+
+.card__btns--payment:hover {
+  opacity: .8;
+  cursor: pointer;
+}
+
+.card__btns--cancel {
+  font-weight: 600;
+  background-color: transparent;
+  color: #767E97;
+}
+
+.card__btns--cancel:hover {
+  color: #1f2f56;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    background-image: url("../images/pattern-background-mobile.svg");
+    padding: 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
